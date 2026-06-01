@@ -6,7 +6,7 @@ A Python-based monitoring tool that continuously checks the health of an API end
 
 - **Continuous monitoring** – checks any API endpoint at a configurable interval (default: 20 seconds)
 - **Timestamped logging** – saves every check result to `health_log.txt` with exact time
-- **Alert on consecutive failures** – only alerts after N failures in a row (reduces noise)
+- **Alert on consecutive failures** – only alerts after 2  failures in a row (reduces noise)
 - **Configurable threshold** – change failure threshold without editing code
 - **Graceful error handling** – catches network errors, timeouts, and non-200 status codes
 - **Silent mode option** – can run without terminal output (only logs to file)
