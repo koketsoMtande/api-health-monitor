@@ -30,7 +30,7 @@ This filters out transient glitches and reduces alert fatigue – a key principl
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/api-health-monitor.git
+   git clone https://github.com/koketsoMtande/api-health-monitor.git
    cd api-health-monitor
 
 2. **Install dependencies**
