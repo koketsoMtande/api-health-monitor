@@ -9,7 +9,6 @@ A Python-based monitoring tool that continuously checks the health of an API end
 - **Smart alerting** – only alerts after **N consecutive failures** (default N=2) to reduce noise
 - **Configurable threshold** – change failure threshold without editing the alert logic
 - **Graceful error handling** – catches network errors, timeouts, and non-200 status codes
-- **Silent mode option** – can run without terminal output (only logs to file)
 
 ## How the Alerting Works (Event Correlation)
 
@@ -19,7 +18,7 @@ The monitor uses a **consecutive failure threshold** to mimic basic event correl
 - If the API fails **N times in a row** (default N=2), the script raises an alert.
 - As soon as a successful check (HTTP 200) occurs, the failure counter resets to 0.
 
-This filters out transient glitches and reduces alert fatigue ,which is  a key principle in NOC and AIOps environments.
+This filters out transient glitches and reduces alert fatigue – a key principle in NOC and AIOps environments.
 
 ## Tech Stack
 
@@ -33,3 +32,13 @@ This filters out transient glitches and reduces alert fatigue ,which is  a key p
    ```bash
    git clone https://github.com/your-username/api-health-monitor.git
    cd api-health-monitor
+
+2. **Install dependencies**
+   ```bash
+   pip install requests
+   ```
+3. **Run the monitor**
+   ```bash
+   python monitor.py
+   ```
+4. **To stop** – press `Ctrl + C`
