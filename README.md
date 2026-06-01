@@ -19,7 +19,7 @@ The monitor uses a **consecutive failure threshold** to mimic basic event correl
 - If the API fails **N times in a row** (default N=2), the script raises an alert.
 - As soon as a successful check (HTTP 200) occurs, the failure counter resets to 0.
 
-This filters out transient glitches and reduces alert fatigue – a key principle in NOC and AIOps environments.
+This filters out transient glitches and reduces alert fatigue ,which is  a key principle in NOC and AIOps environments.
 
 ## Tech Stack
 
